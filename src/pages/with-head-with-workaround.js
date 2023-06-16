@@ -15,7 +15,7 @@ const IndexPage = () => {
   return (
     <main>
       <ul>
-        <li><Link style={linkStyle} to="/">With Head - Will Not Work/Link</Link></li>      
+        <li><Link style={linkStyle} to="/">With Head - Will Not Work</Link></li>      
         <li><Link style={linkStyle} to="/without-head">Without Head - Will Work</Link></li>
         <li><Link style={linkStyle} to="/with-head-with-workaround">With Head With Workaround - Will Work</Link></li>
       </ul>
