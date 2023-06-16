@@ -22,7 +22,7 @@ const IndexPage = () => {
 
       <div>
           <h3>Make sure to fully refresh page after changing pages!</h3>
-          <p>Changing the color mode here will not work because of Head API</p>
+          <p>Changing the color mode here will work due to not using Head API</p>
           <p>Current Color Mode: {colorMode}</p>
           <Button onClick={ () => {
             setColorMode(isDark ? `default` : `dark`);
@@ -37,4 +37,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+//export const Head = () => <title>Home Page</title>

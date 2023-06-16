@@ -22,11 +22,11 @@ const IndexPage = () => {
 
       <div>
           <h3>Make sure to fully refresh page after changing pages!</h3>
-          <p>Changing the color mode here will not work because of Head API</p>
+          <p>Changing the color mode here will work due to explicitly setting the class on html element</p>
           <p>Current Color Mode: {colorMode}</p>
           <Button onClick={ () => {
             setColorMode(isDark ? `default` : `dark`);
-            //document.documentElement.classList.value = `theme-ui-${isDark ? `__default` : `dark`}`
+            document.documentElement.classList.value = `theme-ui-${isDark ? `__default` : `dark`}`
           }}>
             Toggle {isDark ? 'Default' : 'Dark'}
           </Button>      
